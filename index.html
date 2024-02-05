@@ -44,7 +44,14 @@
   const COMMANDS = new Map([
     ['a', { name: 'AI', url: 'http://localhost:3080/c/new' }],
     ['c', { name: 'Clock', url: 'https://vclock.com/time/' }],
-    ['g', { name: 'GitHub', url: 'https://github.com' }],
+    [
+      'g',
+      {
+        name: 'Github',
+        searchTemplate: 'https://github.com/search?q={}&type=repositories',
+        url: 'https://github.com',
+      },
+    ],
     ['r', { name: 'Reddit', url: 'https://reddit.com' }],
     ['t', { name: 'Translate', url: 'https://translate.google.com/' }],
     ['s', { name: 'Spotify', url: 'https://open.spotify.com' }],
